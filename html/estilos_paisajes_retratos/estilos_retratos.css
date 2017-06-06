@@ -1,0 +1,302 @@
+body{
+  width: 100%;
+  background: #02010a;
+  margin: 0px;
+  padding: 2%;
+  align-content: center;
+  box-sizing: border-box;
+  font-family: Dancing;
+}
+
+@font-face{
+  font-family:Dancing;
+  src: url(dancing-script.ttf);
+}
+
+/*Descktop */
+
+
+@media screen and (min-width:100px) and (max-width:900px){
+
+  *{
+    text-align: center;
+  }
+
+  .header{
+    padding: 1%;
+    text-align: center;
+    height: 230px;
+    box-sizing: border-box;
+    align-content: center !important;
+  }
+  .encabezado{
+    width: 100%;
+    padding-left: 0% !important;
+    margin: 0px;
+    order: 1
+  }
+
+  .Inicio, .Paisajes, .Retratos{
+    margin-left: 2vh;
+    order: 2
+  }
+
+  nav{
+    width: 100% !important;
+    overflow: hidden;
+    padding: 0px;
+    margin-top: 100px;
+
+  }
+
+  .encabezado, nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  section{
+    padding: 10% !important;
+    height: auto !important;
+  }
+
+  section div>img{
+    margin-bottom: auto;
+    margin-bottom: 40px;
+  }
+
+  img[class*="img"]{
+    width: 100%;
+    height: 100%;
+  }
+
+  footer{
+    padding: 1vw !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box ;
+  }
+
+  #contenido_pie{
+    padding-left: 5px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .bloque1, .bloque2, .bloque3{
+    margin-bottom: 0px !important;
+  }
+
+}
+
+@media screen and (min-width:900px) and (max-width:1800px){
+
+  section{
+      padding: 5% !important;
+      height: 100% !important;
+  }
+
+  section > div{
+    padding: 1vw auto;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  section div>img{
+    margin-bottom: 5%;
+  }
+
+  #bloque_1, #bloque_2{
+    box-sizing: border-box;
+  }
+
+  #img1, #img2, #img3, #img4, #img5, #img6{
+    width: 30%;
+    height: 30%;
+  }
+
+
+  footer{
+    width: 100% !important;
+    height: 40% !important;
+    box-sizing: border-box;
+  }
+
+  #contenido_pie{
+    padding-right: 1vw;
+    align-content: center;
+    box-sizing: border-box;
+  }
+
+}
+
+/* MOVIMEINTO DE ANIMACION DE PAGINA*/
+
+#contenedor_completo_2{
+  animation: miAnimacion 1s;
+}
+
+@-webkit-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  40%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+header{
+  width: 100%;
+  max-width: 1800px;
+  padding-right: 40px;
+  height: 110px;
+  box-sizing: border-box;
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+
+.encabezado{
+  width: 100%;
+  max-width: 1800px;
+  height: 80px;
+  padding: 15px;
+  position: absolute;
+}
+
+h1{
+  float: left;
+  color: white;
+  text-shadow: 5px 5px 5px #000;
+}
+
+nav{
+  float: right;
+  color: white;
+  position: relative;
+}
+
+.Inicio, .Paisajes, .Retratos{
+  float: left;
+  margin-left: 4vh;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.Inicio>a, .Paisajes>a, .Retratos>a{
+  color: white;
+  font-size: 22px;
+  text-decoration: inherit;
+  position: relative;
+}
+
+nav a:hover{
+  text-shadow: 5px 5px 3px #000;
+}
+
+
+/*ACA EMPIEZA LA IMAGEN CENTRAL */
+
+section{
+  width: 100%;
+  height: 1000px;
+  margin: 0px;
+  padding: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: #d5c75f;
+  align-content: center;
+  max-width: 1800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+section div > img{
+  width: 400px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+img{
+  box-shadow: 0 0 4px 4px #02010a !important;
+}
+
+
+.img1, .img2, .img4, .img5{
+  margin-right: 5vw;
+}
+
+
+/*EFECTO DE IMAGENES CENTRALES*/
+
+.img1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+
+.img2, .img4, .img6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+.img3{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+
+/* PIE DE PAGINA */
+
+footer{
+  background: #C6d5c5;
+  width: 100%;
+  max-width: 1800px;
+  height: 250px;
+  box-sizing: ;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  border-radius: 0 0 10px 10px;
+}
+
+
+#contenido_pie{
+  text-align: center;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  float: left;
+  list-style-type: none;
+}
+
+.bloque1, .bloque2, .bloque3, .bloque4{
+  margin: 28px;
+  text-align: center;
+}
+
+li{
+  margin-top: 5px;
+}
+
+li a{
+  color: white;
+}
+
+li a:hover{
+  color: red;
+}
+
+img{
+  box-shadow: 0 0 4px 2px #02010a;
+}
+
+#facebook, #twitter, #instagram{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  text-decoration: none;
+}
